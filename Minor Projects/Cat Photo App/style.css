@@ -1,0 +1,30 @@
+h1, h2, h3, p {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 150px;;
+    height: 100px;
+}
+
+button {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: center;
+}
+
+input {
+    margin: 5px;
+}

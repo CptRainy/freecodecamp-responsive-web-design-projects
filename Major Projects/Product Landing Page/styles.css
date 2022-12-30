@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+header {
+    background-color: #545453;
+    padding: 0.8em 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffbd59;
+    font-family: 'Rammetto One', cursive;
+}
+
+nav a:hover, nav a:focus {
+    color: #545453;
+    background-color:#ffbd59;
+    border-radius: 25%;
+    padding: 2px;
+}
+
+.logo-image {
+    height: 50px;
+}
+
+.logo-text {
+    font-family: 'Crete Round', serif;
+    color: #ffbd59;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-shadow: -2px 3px 3px black;
+}
+
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    font-family: 'Rammetto One', cursive;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/placeholder.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-wrapper {
+    height: 625px;
+    width: 100%;
+    color:black;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: -2px 3px 3px black;
+}
+
+.hero-maintext{
+    font-family: 'Crete Round', serif;
+    color: #ffbd59;
+    margin-bottom: -10px;
+    font-size: 60px;
+}
+
+.hero-subtext {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.hero-subtext, #email, .description, .price {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#email {
+    width: 200px;
+    height: 30px;
+    font-size: medium;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: #ffbd59;
+    border: 2px solid #ffbd59;
+    padding: 5px 10px;
+    border-radius: 12px;
+    text-align: center;
+    height: 40px;
+    width: 110px;
+    font-weight:  bolder;
+    font-size: large;
+    font-family: 'Crete Round', serif;
+    letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+  
+:-moz-placeholder {
+    text-align: center;
+}
+
+#submit:hover {
+    cursor: pointer;
+
+}
+
+.space {
+    height: 50px;
+}
+
+.products, .made, .pricing{
+    text-align: center;
+    margin: 5%;
+}
+
+.products h1, .made h1, .pricing h1 {
+    color: #ffbd59;
+    padding-bottom: 3%;
+    text-shadow: -2px 3px 3px black;
+}
+
+span, .p1h, .p2h, .p3h{
+    color: #ffbd59;
+    text-shadow: 1px 1px 3px black;
+}
+
+.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.made{
+    text-align: center;
+}
+
+.made figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.made iframe {
+    display: block;
+    margin: auto;
+}
+
+.pricing-wrap {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.p1,.p2,.p3 {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ffbd59;
+    display: block;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.price {
+    padding: 5%;
+    font-size: 30px;
+}
+
+.description {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.pricing-wrap {
+    padding-bottom: 5%;
+}
+
+button {
+    background-color: #545453;
+    color: #ffbd59;
+    border:#545453;
+    width: 80px;
+    height: 35px;
+    border-radius: 5%;
+    margin-top: 8%;
+}
+
+footer {
+    text-align: center;
+    background-color: #545453;
+    padding-top: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    padding-bottom: 20px;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container-nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+
+    .hero-text{
+        top: 70%;
+        left: 50%;
+    }
+  }

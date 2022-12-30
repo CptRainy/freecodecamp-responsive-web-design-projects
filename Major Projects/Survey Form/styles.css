@@ -1,0 +1,40 @@
+body{
+    background-color: pink;
+  }
+  
+  .survey{
+    width: 80%;
+    background-color: rgba(255,255,255,0.8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .headers {
+    text-align: center;
+    padding: auto;
+  }
+  
+  #description {
+    font-size: 16px;
+  }
+  
+  label{
+    font-size: 18px;
+  }
+  
+  .recommend{
+    display: in-line ;
+    align-items: left;
+    width: 50% ;
+    margin-top: 5px;
+  }
+  
+  
+  #name, #email, #number, #dropdown, #submit, #improved, textarea{
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+  }
+  

@@ -1,0 +1,136 @@
+body {
+    background-color: #486856;
+    font-family: sans-serif;
+    padding: 20px;
+    color: white;
+}
+  
+h1, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+hr{
+    background-color: white;
+    border-color: white;
+}
+
+.menu {
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.headers p{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.size p{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.tall, .grande, .venti{
+    text-align: right;
+}
+
+.tall{
+    margin-left: 200px;
+    width: 20%;
+}
+
+.grande{
+    width: 21%;
+}
+
+.venti{
+    width: 19%;
+}
+
+.main-text{
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.sub-text{
+    margin-left: 15px;
+}
+
+.flavor{
+    text-align: left;
+    width: 40%;
+}
+  
+.price1{
+    text-align: right;
+    width: 20.5%;
+}
+
+.price2{
+    text-align: right;
+    width: 18%;
+}
+
+.price3{
+    text-align: right;
+    width: 20.5%;
+}
+
+.bottom-line{
+    margin-top: 10px;
+}
+
+a{
+    color:white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: black;
+}
+
+/*FOOTER*/
+footer{
+    font-size: 14px;
+}
+
+.address{
+    margin-bottom: 5px;
+}
