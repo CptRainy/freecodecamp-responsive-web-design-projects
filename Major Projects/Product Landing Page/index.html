@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Rammetto+One&display=swap" rel="stylesheet">
+        <title>Captain's Cookies</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container container-nav">
+                <div class="headings">
+                    <a href="#hero"><img src="Images/logo.png" class="logo-image"/></a>
+                    <h1 class="logo-text">Captain's Cookies</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#products">PRODUCTS</a></li>
+                        <li><a href="#howitsmade">VIDEO</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="hero" class="hero">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1 class="hero-maintext">Captain's Cookies</h1>
+                        <p class="hero-subtext">Baking Goods for sale!</p>
+                        <form action="https://www.freecodecamp.com/email-submit" method="post">
+                            <input type="email" id="email" name="email" placeholder="Enter your email here!" required/>
+                            <br/><input type="submit" id="submit" name="submit" value="Subscribe"/>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <div class="space" id="products"></div>
+            <div class="products">
+                <h1>Crowd Favorites</h1>
+                <div class="gallery">
+                    <img src="Images/ChocolateChip.jpg"/>
+                    <img src="Images/CinnamonOatmeal.jpg"/>
+                    <img src="Images/ChocolateCrinkles.jpg"/>
+                    <img src="Images/RedVelvetCrinkles.jpg"/>
+                </div>
+            </div>
+            <div class="space" id="howitsmade"></div>
+            <div class="made">
+                <h1>How Its Made</h1>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fh7acREmkGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption><span>Disclaimer:</span> This video is NOT owned by Captain's Cookies</figcaption>
+                </figure>
+            </div>
+            <div class="space" id="pricing"></div>
+            <div class="pricing">
+                <h1>Pricing</h1>
+                <div class="pricing-wrap">
+                    <div class="p1">
+                        <div class="p1h">
+                            <h2>Private</h2>
+                        </div>
+                        <div class="p1t">
+                            <h2 class="price">₱100</h2>
+                            <p class="description">Private Rank contains 2 crinkles and 4 cookies, you can choose the flavors.</p>
+                            <button>SELECT</button>
+                        </div>
+                    </div>
+                    <div class="p2">
+                        <div class="p2h">
+                            <h2>Sergeant</h2>
+                        </div>
+                        <div class="p2t">
+                            <h2 class="price">₱180</h2>
+                            <p class="description">Sergeant Rank contains 6 crinkles and 6 cookies, you can choose the flavors.</p>
+                            <button>SELECT</button>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <div class="p3h">
+                            <h2>Colonel</h2>
+                        </div>
+                        <div class="p3t">
+                            <h2 class="price">₱250</h2>
+                            <p class="description">Colonel Rank contains 12 cookies/crinkles, you can choose the flavors.</p>
+                            <button>SELECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Copyright 2022, Captain's Cookies</p>
+        </footer>
+    </body>
+</html>

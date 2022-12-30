@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <main>
+        <div class="headers">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">Thank you for taking this time to improve our events!</p>
+        </div>
+        <div class="survey">
+          <form id="survey-form" action="#" method="post">
+            <label for="name" id="name-label">Name: <input type="text" id="name" name="name" placeholder="Please input your full name"required/></label>
+
+            <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Make sure your email is correct" required/></label>
+
+           <label for="number" id="number-label">Age: <input type="number" id="number" name="number" min="16" max="120" placeholder="Optional"/></label>
+
+          <label for="dropdown" id="dropdown-label">What was your favorite part of the event?
+            <select id="dropdown" name="dropdown" required>
+              <option value="">(Select one)</option>
+              <option value="1">First Part</option>
+              <option value="2">Middle Part</option>
+              <option value="3">Last Part</option>
+            </select>
+          </label>
+
+          <label class="recommend">Would you recommend the event?<br/>
+            <input type="radio" id="yes" name="yes-no" value="Y" required/>
+            <label for="yes" id="yes">Yes</label>
+            <input type="radio" id="no" name="yes-no" value="N"/>
+            <label for="no" id="no">No</label>
+            <input type="radio" id="maybe" name="yes-no"value="M"/>
+            <label for="maybe" id="maybe">Maybe</label><br/></label>
+          
+            <label for="improved" id="improved">What would you like to see improved</label>
+            <input type="checkbox" id="topic" name="topic" value="topic" required>
+            <label for="topic"> Topic</label><br>
+            <input type="checkbox" id="speaker" name="speaker" value="speaker">
+            <label for="speaker"> Speaker</label><br>
+            <input type="checkbox" id="venue" name="venue" value="venue">
+            <label for="venue"> Venue</label><br>
+            </label>
+            <label for="suggestions">Suggestions:</label>
+            <textarea id="suggest" placeholder="My suggestions are..."></textarea>
+            <input type="submit" id="submit" name="submit" value="Submit">
+          </form>
+        </div>
+      </main>
+  </body>
+</html>
