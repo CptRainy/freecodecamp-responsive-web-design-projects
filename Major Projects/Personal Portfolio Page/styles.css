@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@700&family=Noto+Sans+JP&display=swap');
+
+:root {
+    --color1: #121212;
+    --color2: #FFFFFF;
+    --color3: #601979;
+    --color4: #e948f2;
+    --color5: #54236d;
+    --font1: 'Brygada 1918', serif;
+    --font2: 'Noto Sans JP', sans-serif;
+    --temp: 2px solid green;
+    --temp2: 2px solid yellow;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font2);
+    background-color: var(--color1);
+    color: var(--color2);
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 1;
+}
+
+.left {
+    width: fit-content; 
+    margin-left: 8%
+}
+
+.right {
+    width: fit-content;
+    margin-right: 8%;
+}
+
+nav a {
+    color: var(--color2);
+    padding: 0 15px;
+}
+
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+}
+
+main{
+    width: 100%;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.square {
+    width: 900px;
+    height: 400px;
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
+    position: relative;
+    display: block;
+}
+
+.square img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.ws-text {  
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.ws-text h1{
+    font-size: 50px;
+    font-family: var(--font1);
+}
+
+#projects {
+    position: relative;
+    width: 100vw;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.p-text {
+    text-align: center;
+    margin: 5rem;
+    font-family: var(--font1);
+}
+
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    background: var(--color1);
+    border: 0.5rem solid var(--color3);
+    border-radius: 2px;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.project-tile img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-title {
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: var(--color2);
+}
+
+.code {
+    color: var(--color1);
+    transition: color 0.5s;
+}
+
+a.button {
+    appearance: button;
+    background-color: var(--color1);
+    color: var(--color2);
+    text-decoration: none;
+    padding: 10px;
+    border: 0.3rem solid var(--color3);
+    transition: box-shadow ease-in-out 0.5s;
+    margin-bottom: 5rem;
+}
+
+#icons a{
+    text-decoration: none;
+    color: black;
+    margin: 0 25px;
+    transition: font-size 0.5s;
+}
+
+#contact {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color3);
+    text-align: center;
+    position: relative;
+}
+
+#contact h1 {
+    padding-top: 35px;
+    font-size: 2rem;
+    color: var(--color1);
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color3);
+    text-align: center;
+    position: relative;
+}
+
+footer h4 {
+    color: var(--color1);
+    padding: 15px 0px;
+}
+
+.project-tile:hover .code {
+    color: var(--color2);
+    transition: color 0.5s;
+}
+
+.project-tile:hover {
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.button:hover{
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+#nav-link:hover {
+    background-color: var(--color1);
+    border-radius: 25%;
+}
+
+#icons a:hover {
+    color: var(--color2);
+    font-size: large;
+    transition: font-size 0.5s;
+}
+
+@media screen and (max-width: 600px){
+    .square img{
+       display: none;
+    }
+
+    #icons a{
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    #contact h1{
+        margin-bottom :0;
+    }
+}
